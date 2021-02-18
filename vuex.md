@@ -45,3 +45,4 @@ const Counter = {
 1. State: toàn bộ các biến trạng thái của app cần lưu
 
 
+
