@@ -2,7 +2,7 @@ Vuex là gì?
 - Là một thư viện quản lý trạng thái TẬP TRUNG cho ứng dụng Vuejs
 Tại sao phải dùng Vuex
 - Có nhiều trang phải dùng cùng một biến dữ liệu
-- Những chức năng của ứng dụng có thể cùng tác động đến một biến dữ liệu
+- Những chức năng của ứng dụng có thể cùng dùng chung một biến dữ liệu
 Khi nào dùng Vuex 
 - Khi ta cần build một ứng dụng mà có nhiều khá nhiều component, mà có khả năng cần mở rộng thêm nhiều component nữa, việc quản lý các trạng thái chung trong apps trở nên rắc rối,
 còn với một app đơn giản thì ta tự dùng biến trạng thái như const state = { state1:{...},... } cho đơn giản và không rườm rà
@@ -43,6 +43,8 @@ const Counter = {
 }
 
 1. State: toàn bộ các biến trạng thái của app cần lưu
-
-
+2. Mutations: là cách duy nhất để tác động đến các biến lưu trong state
+3. Actions: tương tự như mutations, nhưng khác ở chỗ: 1: thay vì trực tiếp thay đổi state, thì thông qua mutations bằng context.commit('mutation_name') để thay đổi
+            2: trong action có thể dùng xử lý bất đồng bộ, như gọi ajax
+4. Module: 
 
